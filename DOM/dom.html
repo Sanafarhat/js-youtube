@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+     <div class="btn"><button onclick="Open()">Menu bar</button></div>
+    <div class="mobile-options">
+        <span onclick="Close()">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Contact</div>
+        <div>Options</div>
+    </div>
+    <script>
+        function Close(){
+            document.getElementsByClassName("mobile-options")[0].style = "left: -300px"
+        }
+        function Open(){
+            document.getElementsByClassName("mobile-options")[0].style = "left: 0px"
+        }
+    </script>
+</body>
+</html>
